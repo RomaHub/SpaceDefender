@@ -11,15 +11,8 @@ public class PlayerMove : NetworkBehaviour
 
 	private Rigidbody2D _rigidBody2D;
 
-    private Vector3 _screenSE;
-    private Vector3 _screenSW;
-
     private void Start()
 	{
-
-        _screenSE = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, Camera.main.transform.localPosition.y));
-        _screenSW = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.localPosition.y));
-
 
 		_spaceWidth = Camera.main.orthographicSize;
 

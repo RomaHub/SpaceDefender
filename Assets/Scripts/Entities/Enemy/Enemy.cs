@@ -15,7 +15,6 @@ public class Enemy : NetworkBehaviour, IDamageable
     [SerializeField]
     private GameObject explosionPrefab;
 
-    private Rigidbody2D _rb2D;
     private AudioSource _audio;
     private GameObject _killer;
 
@@ -43,7 +42,6 @@ public class Enemy : NetworkBehaviour, IDamageable
     private void Start()
     {
         _audio = GetComponent<AudioSource>();
-        _rb2D = GetComponent<Rigidbody2D>();
         Destroy(gameObject, 10f);
     }
 
